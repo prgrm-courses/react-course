@@ -1,3 +1,3 @@
-# React Couse
+# React Course
 
 
