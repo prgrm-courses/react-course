@@ -1,0 +1,35 @@
+:root {
+    --bkg-navbar: #21222a;
+}
+
+nav {
+    padding: 0% 5% 0% 5%;
+    font-family: "Inter", sans-serif;
+    background-color: var(--bkg-navbar);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 91px;
+}
+
+.image-title {
+    color: #61dafb;
+    display: flex;
+    align-items: center;
+    min-width: 180px;
+}
+
+.image-title h1{
+    font-weight: 700;
+}
+
+.reactLogo {
+    margin-right: 6%;
+    width: 29.93px;
+}
+
+.project-name h2 {
+    color: #deebf8;
+    font-size: 16px;
+    font-weight: 600;
+}

@@ -1,19 +1,26 @@
 import React from "react";
-import "../styles/style.css";
+import backgroud_image from "../images/react-icon-large.png";
+import "../styles/main-style.css";
 
 export default function Main() {
     return (
         <main>
-            <h1 className="main--title">Fun facts about React</h1>
-            <ul className="main--facts">
-                <li>Was first released in 2013</li>
-                <li>Was originally created by Jordan Walke</li>
-                <li>Has well over 100K stars on GitHub</li>
-                <li>Is maintained by Facebook</li>
-                <li>
-                    Powers thousands of enterprise apps, including mobile apps
-                </li>
-            </ul>
+            <div className="main-container">
+                <h1>Fun facts about React</h1>
+                <ul>
+                    <li>Was first released in 2013</li>
+                    <li>Was originally created by Jordan Walke</li>
+                    <li>Has well over 100k starts on Github</li>
+                    <li>Is mainteined by Facebook</li>
+                    <li>
+                        Powers thousands of enterprises apps, including mobile
+                        apps
+                    </li>
+                </ul>
+            </div>
+            <div className="backgroud-image">
+                <img src={backgroud_image} alt="react backgroung logo" />
+            </div>
         </main>
     );
 }

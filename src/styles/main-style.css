@@ -1,0 +1,52 @@
+main {
+    background-color: #33373e;
+    height: calc(100vh - 91px);
+    font-family: "Inter", sans-serif;
+    display: flex;
+    flex-direction: column;
+    padding-top: 5%;
+    position: relative;
+    z-index: -2;
+    min-height: 459px;
+}
+
+.main-container h1 {
+    font-weight: bold;
+    color: #ffffff;
+    margin-bottom: 2%;
+    margin-left: 3%;
+}
+
+.main-container ul {
+    z-index: 99;
+}
+
+.main-container ul li::before {
+    content: "\2022"; /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #61dafb; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    font-size: 1.5em;
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: 1em; /* Also needed for space (tweak if needed) */
+}
+
+.main-container ul li {
+    font-size: 16px;
+    color: #ffffff;
+    padding-left: 3%;
+}
+
+.backgroud-image img {
+    filter: opacity(0.3) grayscale(1) brightness(0.5);
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    max-width: 40vw;
+    min-width: 263px;
+}

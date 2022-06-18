@@ -1,12 +1,17 @@
-import React from "react"
-import react_icon_small from "../images/react-icon-small.png"
+import React from "react";
+import reactLogo from "../images/react-icon-small.png";
+import "../styles/navbar-style.css";
 
 export default function Navbar() {
     return (
         <nav>
-            <img src={react_icon_small} className="nav--icon" />
-            <h3 className="nav--logo_text">ReactFacts</h3>
-            <h4 className="nav--title">React Course - Project 1</h4>
+            <div className="image-title">
+                <img src={reactLogo} className="reactLogo" alt="react-logo" />
+                <h1>ReactFacts</h1>
+            </div>
+            <div className="project-name">
+                <h2>React Course - Project 1</h2>
+            </div>
         </nav>
-    )
+    );
 }
