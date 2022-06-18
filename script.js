@@ -1,19 +1,22 @@
-// ReactDOM.render(<h1>Hello, React!</h1>, document.getElementById("root"))
+/* Challenge: 
 
-/* 
-Challenge - recreate the above line of code in vanilla JS by creating and
-appending an h1 to our div#root (without using innerHTML).
+Create a navbar in JSX:
+    - Use the semantic `nav` element as the parent wrapper
+    - Have an h1 element with the brand name of your "website"
+    - Insert an unordered list for the other nav elements
+        - Inside the `ul`, have three `li`s for "Pricing",
+        "About", and "Contact"
+    - Don't worry about styling yet - it'll just be plain-looking HTML for now */
 
-- Create a new h1 element
-- Give it some textContent
-- Give it a class name of "header"
-- append it as a child of the div#root
-    
-*/
-
-function vanilla() {
-    const element = document.createElement("h1");
-    element.textContent = "Vanilla js";
-    element.classList.add("header");
-    document.querySelector("#root").appendChild(element);
-}
+const element = (
+    <nav>
+        <h1>Google</h1>
+        <ul>
+            <li>Pricing</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+);
+console.log(element);
+ReactDOM.render(element, document.getElementById("root"));
